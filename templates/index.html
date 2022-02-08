@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Students Grading Score</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	<meta name="viewport" content="width=device-wirth, initial-scale=1.0">
+</head>
+
+<body>
+	<section div class="container">
+		<div class="container-header-box">
+			<div class="container-header">
+				<header>Students Grading Classification</header>
+			</div>
+		<form action="{{url_for('pridict')}}" method="post">
+			<div class="students-content">
+				<div class="students-content-border">
+					<header>Subject Wise Score Description</header>
+				</div>
+				<div class="entry-square-box">
+					<div class="square-box">
+						<div class="image">
+							<img src="{{url_for('static', filename='results.jpg')}}">
+						</div>
+						<div class="students-prediction">
+							<div class="students-details">
+								<div class="input-box">
+									<label class="details">CSE Mathematics Score</label>
+									<input type="number" name="cse_math_score" placeholder="Enter Your CSE Mathematics Score">
+								</div>
+								<div class="input-box">
+									<label class="details">EEE Electronic & Circuits Score</label>
+									<input type="number" name="eee_score" placeholder="Enter Your Electronic & Circuits Score">
+								</div>
+								<div class="input-box">
+									<label class="details">CSE Software Development Score</label>
+									<input type="number" name="cse_deploy_score" placeholder="Enter Your CSE Development Score">
+								</div>
+								<div class="input-box">
+									<label class="details">Mathematics IV's score</label>
+									<input type="number" name="math_score" placeholder="Enter Your Mathematics IV's score">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="savebutton" id="showbtnid">
+					<a href="#modalbox">
+						<span>Show Results</span>
+					</a>
+					<button type="submit" value="Submit" id="myBtn">Save</button>
+				</div>
+			</div>
+		</form>
+		</div>
+		<div id="modalbox" class="modal">
+			<div class="modalcontent">
+				<div class="modalcontent-header">
+					<h1>Students Grading Results</h1>
+				</div>
+				<div class="result-prediction-box">
+					<span>{{prediction}}</span>
+				</div>
+				<div class="cube">
+					<div class="top"></div>
+					<div>
+						<span style="--i:0;"></span>
+						<span style="--i:1;"></span>
+						<span style="--i:2;"></span>
+						<span style="--i:3;"></span>
+					</div>
+				</div>
+				<div class="cubetwo">
+					<div class="bottom"></div>
+					<div>
+						<span style="--i:0;"></span>
+						<span style="--i:1;"></span>
+						<span style="--i:2;"></span>
+						<span style="--i:3;"></span>
+					</div>
+				</div>
+					<a href="#" class="modalclose">&times;</a>
+				<div class="modal-footer">
+					<p>Design by @Shariat Sunny</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+</body>
+</html>

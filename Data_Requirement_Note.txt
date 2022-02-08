@@ -1,0 +1,31 @@
+Professor Shane Bauman has just been appointed the dean of the Mathematics 
+department by the president of the university. Being a creative professor of 
+mathematics, Mr. Bauman takes a systematic approach to understanding his students' 
+grade patterns. He targets a batch of students who have just completed their 2B term 
+(2nd-year 2nd semester). He collects data such as their final grades, their preparation 
+for the exams, some background information, etc. His goal is to analyze these datasets 
+and predict the probable grades of the newcomers of the 2B term. Mr. Bauman has 
+enough relevant data of the newcomers to analyze possible outcomes of the course 
+grades. Analyzing Mr. Bauman's data of the past 2B students and the newcomers, your 
+job is to predict the likely course grades of the newcomers of the 2B term. 
+Please try to be as accurate as possible to help Mr. Bauman impress the president with 
+his findings. (Tips: Attention to detail and thinking outside the box will definitely take you 
+a long way). Hope you enjoy the test.
+Technical Details
+There are two files for this test. The train.csv file contains the data sets of students who 
+have completed their 2B term. You are expected to analyze these data and implement 
+your analytics on test.csv file which contains necessary data sets for newcomers of the 
+2B term whose grades you will be predicting.
+The following are the tasks to be done in the IPython Notebook (Google Colab)
+· Read the dataset with the name train.csv available in the attachment section
+*NOTE:
+Data Fields:
+• Id
+• Gender
+• Preparation Rating
+• CSE1203 Discrete Mathematics score
+• EEE2142 Electronic Devices and Circuits' score
+• CSE2200 Software Development I's score
+• MATH2203 Mathematics IV's score
+• Admission Fees
+• Education Level of Parents
